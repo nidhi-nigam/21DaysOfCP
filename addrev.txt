@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int t,i,x,y,r1,r2,s2,s1,p;
+cin>>t;
+for (i=0 ; i<t ; i++)
+{
+    cin>>x>>y;
+    s1=0;
+    while (x!=0)
+    {
+        r1=x%10;
+        s1=s1*10+r1;
+        x=x/10;
+    }
+
+    s2=0;
+    while (y!=0)
+    {
+        r2=y%10;
+        s2=s2*10+r2;
+        y=y/10;
+    }
+    p=s1+s2;
+     int s3=0;
+     while (p!=0)
+    {
+        r2=p%10;
+        s3=s3*10+r2;
+        p=p/10;
+    }
+    cout<<s3<<endl;
+
+
+
+}
+}
+
